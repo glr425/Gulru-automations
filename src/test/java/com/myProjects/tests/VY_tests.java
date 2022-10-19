@@ -288,7 +288,7 @@ public class VY_tests extends TestBase {
                         login.click();
 
                         WebElement fleet = driver.findElement(By.xpath("(//div[@id='main-menu']//span[@class='title title-level-1'])[2]"));
-                        Thread.sleep(1000);
+                        Thread.sleep(2000);
                         fleet.click();
 
                         WebElement cost = driver.findElement(By.xpath("//span[.='Vehicle Costs']"));
@@ -299,6 +299,12 @@ public class VY_tests extends TestBase {
                         Thread.sleep(1000);
                         box.click();
 
+
+                        for ( int i =1; i <= 25; i ++){
+                                WebElement boxes = driver.findElement(By.xpath("//tbody[@class='grid-body']/tr[@class='grid-row row-click-action row-selected']["+i+"]"));
+                                boxes.isSelected();
+                        }
+                        /*
                         WebElement box1 = driver.findElement(By.xpath("//tbody[@class='grid-body']/tr[@class='grid-row row-click-action row-selected'][1]"));
                         box1.isSelected();
                         WebElement box2 = driver.findElement(By.xpath("//tbody[@class='grid-body']/tr[@class='grid-row row-click-action row-selected'][2]"));
@@ -348,7 +354,7 @@ public class VY_tests extends TestBase {
                         WebElement box24 = driver.findElement(By.xpath("//tbody[@class='grid-body']/tr[@class='grid-row row-click-action row-selected'][24]"));
                         box2.isSelected();
                         WebElement box25 = driver.findElement(By.xpath("//tbody[@class='grid-body']/tr[@class='grid-row row-click-action row-selected'][25]"));
-                        box2.isSelected();
+                        box2.isSelected();    */
 
 
 
